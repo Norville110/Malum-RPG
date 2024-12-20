@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dália - Os Filhos da Disrupção</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff1493;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        h1 {
+            font-family: 'Fugaz One', cursive;
+            font-size: 4em;
+            background: linear-gradient(90deg, #ff1493, #fff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+
+        .container {
+            padding: 30px;
+            background: #ff1493;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .profile-pic {
+            max-width: 200px;
+            border-radius: 15px;
+            border: 3px solid #ff1493;
+        }
+
+        .image-status {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .status {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .attributes {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            font-size: 1.5em;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            border: 2px solid #ff1493;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .button {
+            background-color: #fff;
+            color: #ff1493;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 15px;
+        }
+
+        .button:hover {
+            background-color: #ffeb3b;
+            color: #ff1493;
+        }
+
+        .attributes, .status {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        .attributes h3, .status h3 {
+            color: #ff1493;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .attributes p, .status p {
+            font-size: 1.4em;
+            margin: 8px 0;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #333;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .progress {
+            height: 30px;
+            line-height: 30px;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .progress.hp { background-color: #ff4d4d; }
+        .progress.lucidez { background-color: #aebec4; }
+        .progress.fome { background-color: #ff9933; }
+        .progress.sede { background-color: #69c5e9; }
+
+        .section-inventory, .section-talents, .section-skills {
+            background: #911b5c;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dália</h1>
+    </header>
+
+    <div class="container">
+        <div class="quote">
+            "Sobreviver é minha única regra"
+        </div>
+
+        <div class="image-status">
+            <img src="dalia.jpg" alt="Dália" class="profile-pic">
+            <div class="status">
+                <h3>Status</h3>
+                <p>HP ❤️:</p>
+                <div class="progress-bar">
+                    <div class="progress hp" style="width: 100%;">13/13</div>
+                </div>
+
+                <p>Lucidez 😵‍💫:</p>
+                <div class="progress-bar">
+                    <div class="progress lucidez" style="width: 100%;">11/11</div>
+                </div>
+
+                <p>Fome 🍖:</p>
+                <div class="progress-bar">
+                    <div class="progress fome" style="width: 100%;">5/5</div>
+                </div>
+
+                <p>Sede 💧:</p>
+                <div class="progress-bar">
+                    <div class="progress sede" style="width: 100%;">12/12</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Informações Gerais</h2>
+            <div class="attributes">
+                <h3>Atributos:</h3>
+                <p>Força: 1</p>
+                <p>Destreza: 3</p>
+                <p>Agilidade: 2</p>
+                <p>Constituição: 1</p>
+                <p>Resistência: 2</p>
+                <p>Percepção: 3</p>
+                <p>Carisma: 1</p>
+                <p>Inteligência: 4</p>
+                <p>Sabedoria: 2</p>
+                <p>Sorte: 0</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section section-inventory">
+                <h2>Inventário</h2>
+                <ul>
+                    <li>Magnum</li>
+                    <li>Colar</li>
+                    <li></li>
+                </ul>
+            </div>
+    
+            <div class="section section-skills">
+                <h2>Traquejos</h2>
+                <ul>
+                    <li>Armas de Fogo</li>
+                    <li>Avaliação de Riscos</li>
+                    <li>Furtividade</li>
+                    <li>Primeiros Socorros</li>
+                    <li>Reflexos</li>
+                    <li>Resistência a Privação do Sono</li>
+                    <li>Táticas de Guerrilha</li>
+                </ul>
+            </div>
+    
+            <div class="section section-talents">
+                <h2>Talentos</h2>
+                <ul>
+                    <li>Mestre de fuga</li>
+                    <li>Recarga Rápida</li>
+                    <li>Multicalibre</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="button" onclick="window.location.href='personagens.html'">Voltar à Seleção de Personagens</button>
+        <button class="button" onclick="window.location.href='index.html'">Voltar ao Início</button>
+    </div>
+
+    <footer style="text-align: center; padding: 15px; background: #000; color: #ff1493;">
+        &copy; 2024 Os Filhos da Disrupção - A Última Aurora || Criado por Lucas Matheus do Nascimento
+    </footer>
+</body>
+</html>

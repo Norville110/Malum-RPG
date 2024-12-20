@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Personagens - Os Filhos da Disrupção</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #ffd700;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffd700;
+            padding: 20px;
+            text-align: center;
+            color: #000;
+            font-size: 28px;
+            border-bottom: 3px solid #ff6f00;
+        }
+
+        h1 {
+            font-family: 'Fugaz One', cursive;
+            font-size: 3em;
+            background: linear-gradient(90deg, #ffd700, #ff6f00);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .container {
+            padding: 30px;
+            background: #222;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            max-width: 1200px;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .character-box {
+            background: #333;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            position: relative;
+            width: calc(33.33% - 20px);
+            transition: transform 0.3s ease;
+        }
+
+        .character-box:hover {
+            transform: scale(1.05);
+        }
+
+        .character-box img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .character-box img:hover {
+            transform: scale(1.1);
+        }
+
+        .character-box h2 {
+            font-size: 1.5em;
+            color: #ffd700;
+            margin: 0;
+        }
+
+        .button-details {
+            background-color: #ffd700;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .button-details:hover {
+            background-color: #ffeb3b;
+            transform: scale(1.1);
+        }
+
+        /* Palhetas de Cores dos Personagens */
+        .kane .button-details {
+            background-color: #003366;
+        }
+
+        .lucky-starr .button-details {
+            background-color: #ff6600;
+        }
+
+        .jenna-norman .button-details {
+            background-color: #8b4513;
+        }
+
+        .rahim-musk .button-details {
+            background-color: #dcdcdc;
+        }
+
+        .dalia .button-details {
+            background-color: #ff66b2;
+        }
+
+        .lyssander .button-details {
+            background-color: #ffd700;
+        }
+
+        .back-button {
+            background-color: #ffd700;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .back-button:hover {
+            background-color: #ffeb3b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #000;
+            color: #ffd700;
+            margin-top: 30px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .character-box {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .character-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FILHOS DA DISRUPÇÃO</h1>
+    </header>
+
+    <div class="container">
+        <div class="character-box kane">
+            <img src="kane.jpg" alt="Kane">
+            <h2>Kane Northeast</h2>
+            <button class="button-details" onclick="window.location.href='kanenortheast.html'">Ver Detalhes</button>
+        </div>
+
+        <div class="character-box lucky-starr">
+            <img src="lucky_starr.jpg" alt="Lucky Starr">
+            <h2>Lucky Starr</h2>
+            <button class="button-details" onclick="window.location.href='luckystarr.html'">Ver Detalhes</button>
+        </div>
+
+        <div class="character-box jenna-norman">
+            <img src="jenna.jpg" alt="Jenna Norman">
+            <h2>Jenna Norman</h2>
+            <button class="button-details" onclick="window.location.href='jennanorman.html'">Ver Detalhes</button>
+        </div>
+
+        <div class="character-box rahim-musk">
+            <img src="rahim.jpg" alt="Rahim Musk">
+            <h2>Rahim Musk</h2>
+            <button class="button-details" onclick="window.location.href='rahimmusk.html'">Ver Detalhes</button>
+        </div>
+
+        <div class="character-box dalia">
+            <img src="dalia.jpg" alt="Dália">
+            <h2>Dália</h2>
+            <button class="button-details" onclick="window.location.href='daliathorn.html'">Ver Detalhes</button>
+        </div>
+
+        <div class="character-box lyssander">
+            <img src="lyssander_maat_nero.jpg" alt="Lyssander">
+            <h2>Lyssander Maat Nero</h2>
+            <button class="button-details" onclick="window.location.href='lyssandermaatnero.html'">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <button class="back-button" onclick="window.location.href='index.html'">Voltar à Tela Inicial</button>
+
+    <footer>
+        &copy; 2024 Os Filhos da Disrupção - A Última Aurora || Criado por Lucas Matheus do Nascimento
+    </footer>
+</body>
+
+</html>

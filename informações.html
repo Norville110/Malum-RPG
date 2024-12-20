@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Os Filhos da Disrupção</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #F6C300;
+            overflow-x: hidden;
+        }
+
+        .header {
+            position: relative;
+            background: url('caminho/para/imagem-de-fundo-eventos.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #F6C300;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 4em;
+            z-index: 1;
+            font-family: 'Verdana', sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .header p {
+            font-size: 1.5em;
+            z-index: 1;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .intro {
+            padding: 40px;
+            background-color: #333333;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            position: relative;
+        }
+
+        .intro h2 {
+            margin-top: 0;
+            font-size: 2.5em;
+            color: #F6C300;
+            font-family: 'Verdana', sans-serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .event-button {
+            background-color: #F6C300;
+            color: #000000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .event-button:hover {
+            background-color: #e5b800;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #F6C300;
+            color: #000000;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.7);
+        }.back-button {
+            background-color: #F6C300;
+            color: #000000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            transition: background-color 0.3s ease;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .back-button:hover {
+            background-color: #D89E00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+    <div class="header">
+        <h1>Eventos de Malum</h1>
+        <p>Os acontecimentos que moldaram o mundo devastado</p>
+    </div>
+
+    <div class="intro">
+        <h2>Principais Eventos</h2>
+        <p>
+            Em Malum, três eventos marcaram profundamente a história da humanidade:
+            <ul>
+                <li><strong>A Disrupção</strong>: O evento cataclísmico que destruiu a civilização.</li>
+                <li><strong>A Coroa do Crepúsculo</strong>: O momento em que a aurora apareceu no céu, trazendo uma nova era de possibilidades e desafios.</li>
+                <li><strong>O Desvanescer</strong>: A queda dos últimos focos de resistência.</li>
+            </ul>
+            Cada um desses eventos teve consequências devastadoras, alterando para sempre a realidade em que os poucos que restam agora vivem. Conheça a história por trás desses marcos, e entenda como o mundo chegou ao seu estado atual.
+        </p>
+    </div>
+
+    <div class="content">
+        <a href="disrupcao.html" class="event-button">A Disrupção</a>
+    
+        <a href="desvanescer.html" class="event-button">O Desvanescer</a>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Os Filhos da Disrupção - A Última Aurora || Criado por Lucas Matheus do Nascimento
+    </div>
+
+</body>
+
+</html>
+

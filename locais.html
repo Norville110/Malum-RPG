@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locais Conhecidos - Os Filhos da Disrupção</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0A0A0A;
+            color: #FFDC00;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        .header {
+            background-color: #2C2C2C;
+            color: #FFDC00;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+            position: relative;
+            z-index: 1;
+            border-bottom: 3px solid #FFDC00;
+        }
+
+        .header h1 {
+            font-size: 4em;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #FFDC00;
+            color: #1e1e1e;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #F7C200;
+            transform: translateY(-3px);
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 1300px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        .location-box {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #FFDC00;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            height: 350px;
+            background: linear-gradient(45deg, #333, #444);
+            overflow: hidden;
+            border: 2px solid transparent;
+            position: relative;
+            z-index: 1;
+        }
+
+        .location-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 220, 0, 0.1), rgba(0, 0, 0, 0.5));
+            opacity: 0.7;
+            z-index: 0;
+        }
+
+        .location-box h3 {
+            font-size: 2.8em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            z-index: 1;
+            position: relative;
+        }
+
+        .location-box .button {
+            background-color: #FFDC00;
+            color: #1e1e1e;
+            padding: 18px 35px;
+            font-size: 20px;
+            margin-top: 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            z-index: 1;
+            position: relative;
+        }
+
+        .location-box .button:hover {
+            background-color: #F7C200;
+            transform: translateY(-3px);
+        }
+
+        .location-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+            background-color: #555;
+        }
+
+        /* Efeito Parallax */
+        .location-box.parallax {
+            background-color: #444;
+            border-radius: 25px;
+            padding: 50px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .location-box.parallax:hover {
+            transform: scale(1.1);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+            background-color: #555;
+        }
+
+        /* Efeito de texto */
+        .location-box h3 span {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .location-box h3 span::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #FFDC00;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+
+        .location-box h3 span:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Locais Conhecidos</h1>
+        <a href="index.html" class="back-button">Voltar</a>
+    </div>
+
+    <div class="content">
+        <!-- Arcádia da Aurora -->
+        <div class="location-box parallax">
+            <h3><span>Arcádia da Aurora</span></h3>
+            <a href="arcadia.html" class="button">Ver Detalhes</a>
+        </div>
+
+        <!-- Floresta Maldita -->
+        <div class="location-box parallax">
+            <h3><span>Floresta Maldita</span></h3>
+            <a href="floresta.html" class="button">Ver Detalhes</a>
+        </div>
+
+        <!-- Laboratório Abandonado -->
+        <div class="location-box parallax">
+            <h3><span>Laboratório Abandonado</span></h3>
+            <a href="laboratorio.html" class="button">Ver Detalhes</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

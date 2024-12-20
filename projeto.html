@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #F6C300;
+        }
+        .header {
+            position: relative;
+            background: linear-gradient(135deg, #F6C300 0%, #e5b800 50%, #000000 100%);
+            color: #000000;
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 5px solid #F6C300;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+            z-index: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 4em;
+            z-index: 1;
+            font-family: 'Verdana', sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            color: #F6C300;
+            letter-spacing: 3px;
+        }
+
+        .header p {
+            font-size: 1.5em;
+            z-index: 1;
+            margin-top: 10px;
+            font-style: italic;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            color: #F6C300;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .project-box {
+            background-color: #222222;
+            border: 2px solid #F6C300;
+            border-radius: 15px;
+            margin: 10px 0;
+            padding: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+        }
+
+        .project-box h2 {
+            margin-top: 0;
+        }
+
+        .back-button {
+            background-color: #F6C300;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #e5b800;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #F6C300;
+            color: #000000;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -6px 12px rgba(0,0,0,0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Projeto</h1>
+    </div>
+    <div class="content">
+        <div class="project-box">
+            <h2>Malum</h2>
+            <p>O RPG se passa no mundo de "Malum", um universo em que o mundo como conhecemos foi totalmente destruído.
+               Cidades em ruínas, horizontes desolados, clima descontrolado e todo tipo de catástrofe que conseguir imaginar.</p>
+            <p>Lute, caçe, destrua e corra como se sua vida dependesse disso. Porque depende.</p>
+            <p>Bem-vindos a Malum. Um mundo sem regras onde os mais fortes prosperam e os fracos caem, onde cada respiração mais funda pode custar sua vida, onde a esperança é uma moeda rara e a sobrevivência é a única lei.</p>
+            <p>Sobreviva.</p>
+        </div>
+
+        <div class="project-box">
+            <h2>A Criação</h2>
+            <p>Meu nome é Lucas Matheus do Nascimento e sou o criador do universo do mundo de Malum, totalmente inspirado por um sonho que tive (com a ajuda de uma amiga). A partir dessa ideia, criei o mundo de Malum e, motivado para encontrar um sistema perfeito e digno para o meu mundo, desenvolvi do zero o sistema de RPG Catástrofes & Ruínas, com a intenção de capturar a intensidade, complexidade e dificuldades desse mundo devastado. Além disso, idealizei e construí, com a ajuda dos meus amigos (esses maravilhosos), a campanha prequel "A Última Aurora", a primeira emocionante história que se desenrola dentro desse meu universo. Cada detalhe e nuance do mundo de Malum reflete minha paixão por criar histórias e jogar RPG.</p>
+        </div>
+
+        <div class="project-box">
+            <h2>O RPG</h2>
+            <p>Minha jornada com RPG começou 4 anos atrás por um acaso do destino (muita sorte) e um convite de um amigo. Desde então, sigo desbravando esse mundo e me apaixonando cada vez mais.</p>
+            <p>Minha paixão por RPG vai além de apenas criar personagens e jogar dados. Eu não seria quem sou hoje se não fosse esse "simples joguinho de interpretação" ou "jogo de teatro". Eu me tornei uma pessoa melhor e conheci pessoas incríveis (e maravilhosas) por causa disso. Pessoas que eu nunca teria entrado em contato NA VIDA e pessoas com as quais eu não teria me aproximado tanto se não fosse esse simples "jogo".</p>
+            <p>Isso provavelmente nunca vai sair do projeto, mas eu quis usar pelo menos uma vez o conhecimento que eu odeio para construir algo que gosto (Eu realmente estou obcecado por este mundo).</p>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar à Tela Inicial</button>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Os Filhos da Disrupção - A Última Aurora || Criado por Lucas Matheus do Nascimento
+    </div>
+</body>
+</html>

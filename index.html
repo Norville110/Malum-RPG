@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Os Filhos da Disrupção</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #F6C300;
+            overflow-x: hidden;
+        }
+
+       
+        .header {
+            position: relative;
+            background: url('caminho/para/imagem-de-fundo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #F6C300;
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 4.5em;
+            z-index: 1;
+            font-family: 'Verdana', sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .header p {
+            font-size: 1.6em;
+            z-index: 1;
+            margin-top: 15px;
+            font-style: italic;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+
+      
+        .intro {
+            padding: 40px;
+            background-color: #333333;
+            border-radius: 15px;
+            margin: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            position: relative;
+        }
+
+        .intro h2 {
+            margin-top: 0;
+            font-size: 2.8em;
+            color: #F6C300;
+            font-family: 'Verdana', sans-serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+    
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .button {
+            background-color: #F6C300;
+            color: #000000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .button:hover {
+            background-color: #e5b800;
+            transform: scale(1.05);
+        }
+
+      
+        .footer {
+            background-color: #F6C300;
+            color: #000000;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.7);
+        }
+
+       
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 3.5em;
+            }
+
+            .header p {
+                font-size: 1.2em;
+            }
+
+            .intro h2 {
+                font-size: 2.2em;
+            }
+
+            .intro p {
+                font-size: 1em;
+            }
+
+            .button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .intro h2 {
+                font-size: 1.8em;
+            }
+
+            .button {
+                width: 100%;
+                padding: 12px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Bem-vindo a Malum</h1>
+        <p>Você consegue sobreviverneste mundo de destruição e ruína?</p>
+    </div>
+
+    <div class="intro">
+        <h2>Introdução ao Mundo</h2>
+        <p>
+            Em Malum(Embora até o momento não se saiba de onde veio esse nome), a sociedade foi destruída por um evento conhecido como "A Disrupção". O que resta da humanidade conhecida vive em pequenas comunidades isoladas e independentes, lutando pela sobrevivência em um ambiente instável e imprevisível.
+            A Arcádia da Aurora, a Floresta Maldita e o Laboratório Abandonado são os principais locais conhecidos pelos "Filhos da Disrupção". "A Disrupção", "A Coroa do Crepúsculo", "O Desvanescer" e "* ******" são eventos marcantes que moldaram a realidade atual.
+            Venha conhecer esse mundo destruído e reconstruí-lo conosco.
+        </p>
+    </div>
+
+    <div class="content">
+        <a href="personagens.html" class="button">Filhos da Disrupção</a>
+        <a href="informações.html" class="button">Eventos</a>
+        <a href="locais.html" class="button">Locais Conhecidos</a>
+        <a href="projeto.html" class="button">Projeto</a>
+        <a href="agradecimentos.html" class="button">Agradecimentos</a>
+        <a href="puzzle.html" class="button">Marina?</a>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Os Filhos da Disrupção - A Última Aurora || Criado por Lucas Matheus do Nascimento
+    </div>
+</body>
+</html>

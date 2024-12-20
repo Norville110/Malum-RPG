@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal - Acesso</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+        }
+        #terminal {
+            background-color: #000;
+            border: 2px solid #00ff00;  
+            padding: 10px;
+            width: 60%;
+            margin: 20px auto;
+            font-size: 18px;
+            height: 300px;
+            overflow-y: auto;
+            color: #ADD8E6;  
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #333;
+            color: white;
+            border: 1px solid #555;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .erro {
+            color: #FF6347; 
+        }
+        .sucesso {
+            color: #32CD32; 
+        }
+    </style>
+</head>
+<body>
+
+<h1>Terminal</h1>
+<p>Digite a senha para continuar:</p>
+
+<div id="terminal">
+    <p>Bem-vindo. Insira a senha de 6 dígitos.</p>
+    <div id="prompt">
+        <p>Senha:</p>
+        <input type="password" id="senha" />
+        <button onclick="verificarSenha()">Enviar</button>
+    </div>
+</div>
+
+<script>
+    function verificarSenha() {
+        const senha = document.getElementById("senha").value;
+
+        if (senha === "131521") {
+            document.getElementById("terminal").innerHTML = `
+                <p class="sucesso">Acesso concedido.</p>
+                <p>Iniciando o próximo nível...</p>
+                <p>Encontre a sequência secreta: "O que começa com o fim e termina no começo?"</p>
+                <input type="text" id="sequencia" />
+                <button onclick="verificarSequencia()">Verificar</button>
+            `;
+        } else {
+            document.getElementById("terminal").innerHTML = `
+                <p class="erro">Acesso negado. Senha incorreta.</p>
+                <input type="password" id="senha" />
+                <button onclick="verificarSenha()">Enviar</button>
+            `;
+        }
+    }
+
+    function verificarSequencia() {
+        const sequencia = document.getElementById("sequencia").value.toLowerCase();
+
+        if (sequencia === "infinito") {
+            document.getElementById("terminal").innerHTML = `
+                <p class="sucesso">Sequência correta. Você desbloqueou a próxima etapa!</p>
+                <p> O que se repete, mas nunca se apaga?</p>
+                <input type="text" id="codigoOculto" />
+                <button onclick="verificarCodigo()">Verificar</button>
+            `;
+        } else {
+            document.getElementById("terminal").innerHTML = `
+                <p class="erro">Resposta incorreta. Tente novamente.</p>
+                <input type="text" id="sequencia" />
+                <button onclick="verificarSequencia()">Verificar</button>
+            `;
+        }
+    }
+
+    function verificarCodigo() {
+        const codigo = document.getElementById("codigoOculto").value.toLowerCase();
+
+        if (codigo === "memória") {
+            alert("Página secreta desbloqueada!");
+            window.location.href = "lorian.html";  
+        } else {
+            alert("Código incorreto. Tente novamente.");
+        }
+    }
+</script>
+
+</body>
+</html>

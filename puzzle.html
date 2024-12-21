@@ -211,7 +211,7 @@
         if (resposta.toLowerCase() === respostasCorretas['resposta' + num].toLowerCase()) {
             document.getElementById('resposta' + num + '-feedback').innerHTML = 'Resposta correta!';
             document.getElementById('pergunta' + num).style.display = 'none';
-            if (num < 15) {
+            if (num < 16) {
                 document.getElementById('pergunta' + (num + 1)).style.display = 'block';
             } else {
                 alert('Parabéns!!!!');

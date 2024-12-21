@@ -176,18 +176,17 @@
     <div id="resposta15-feedback"></div>
 </div>
 
+-- Repetir o mesmo padrão para outras perguntas -->
 <div class="terminal" id="pergunta16" style="display: none;">
-    <p><span class="destaque">Pergunta 16:</span> "Sou a senha que falta, mas sou resumido a apenas dois Digitos."</p>
-    <input type="text" id="resposta4" class="input-box" placeholder="Digite sua resposta">
+    <p><span class="destaque">Pergunta 16:</span> "Sou a senha que falta, mas sou resumido a apenas dois dígitos."</p>
+    <input type="text" id="resposta16" class="input-box" placeholder="Digite sua resposta">
     <button class="btn" onclick="verificarResposta(16)">Enviar</button>
     <div id="resposta16-feedback"></div>
 </div>
 
-    
 <script>
-    // Respostas corretas para cada pergunta
     const respostasCorretas = {
-         resposta1: "Nininha",
+        resposta1: "Nininha",
         resposta2: "Teco",
         resposta3: "Tico",
         resposta4: "???",
@@ -202,22 +201,20 @@
         resposta13: "Dália",
         resposta14: "Esperança",
         resposta15: "Theus",
-        resposta16: "77";
-    }
+        resposta16: "77"
+    };
 
-    // Função de verificação de resposta
     function verificarResposta(num) {
         let resposta = document.getElementById('resposta' + num).value.trim();
         if (resposta.toLowerCase() === respostasCorretas['resposta' + num].toLowerCase()) {
             document.getElementById('resposta' + num + '-feedback').innerHTML = 'Resposta correta!';
             document.getElementById('pergunta' + num).style.display = 'none';
+
             if (num < 16) {
                 document.getElementById('pergunta' + (num + 1)).style.display = 'block';
             } else {
-                alert('Parabéns!!!!');
-                
-window.location.href = "parabéns.html";  
-    
+                alert('Parabéns, você acertou todas as perguntas!');
+                window.location.href = "parabens.html";  
             }
         } else {
             document.getElementById('resposta' + num + '-feedback').innerHTML = 'Resposta incorreta. Tente novamente.';
